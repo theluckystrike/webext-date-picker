@@ -1,0 +1,37 @@
+{
+    "name": "webext-date-picker",
+    "version": "0.1.0",
+    "description": "Date picker component for Chrome extensions — calendar view, date range selection, min/max dates, locale support, and custom formatting for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "date-picker",
+        "calendar",
+        "date-range",
+        "locale",
+        "manifest-v3",
+        "browser-extension",
+        "ui-component",
+        "input"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-date-picker.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
